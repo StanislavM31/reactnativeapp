@@ -1,15 +1,23 @@
 import { useState } from "react";
-import { StyleSheet, Text, TextInput, Button, View } from "react-native";
+import { StyleSheet, TextInput, Button, View } from "react-native";
 
-export function Form() {
-    const [value, setValue] = useState();
+export function Form({ addHandler }) {
+    const [text, setValue] = useState('');
 
-    function onChange(text){
-        setValue(text);
+    const onChange = (task) => {
+        setValue(task)
+    }
+    const addTask = () =>{
+      addHandler(text);
+      setValue('');
     }
   return (
-    <View style={styles.main}>
-      <TextInput style={styles.input} onChange={onChange} placeholder="добавьте дело"/>
+    <View >
+      <TextInput style={styles.input} value={text} onChangeText={onChange} placeholder="добавьте дело"/>
+      
+      <View style={styles.buttonContainer}>
+        <Button onPress={addTask} title="Добавить" />
+      </View>
     </View>
   );
 }
@@ -19,9 +27,14 @@ const styles = StyleSheet.create({
       borderBottomWidth: 2,
       borderColor: '#000',
       textAlign: 'center',
-    padding: 10,
-    marginVertical: 30,
-    marginHorizontal: '20%',
+      padding: 10,
+      marginVertical: 20,
+      marginHorizontal: '20%',
+      width: '60%',
+  },
+  buttonContainer: {
+    alignSelf: 'center',
     width: '60%',
+    borderRadius: 8,
   },
 });
