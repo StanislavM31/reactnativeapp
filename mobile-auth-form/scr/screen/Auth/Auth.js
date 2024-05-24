@@ -18,7 +18,7 @@ export function Auth({ navigation }) {
     <View style={style.container}>
         <TextInput placeholder="Email"/>
         <TextInput placeholder="Password" secureTextEntry={true}/>
-        <Text onPress={()=>navigation.navigate("Sign up")}> Dont have an account?<Text>SignUP</Text></Text>
+        <Text onPress={()=>navigation.navigate("Sign In")}> Dont have an account?<Text>SignUP</Text></Text>
         <Button title="Login">Login</Button>
     </View>
   );

@@ -9,7 +9,7 @@ export function Reg() {
   return (
     <NavigationContainer>
       <StackRouter.Navigator initialRouteName='Home'/>
-      <Stack.Screen name='Home'component={Home}/>
+      <Stack.Screen />
     </NavigationContainer>
   );
 }

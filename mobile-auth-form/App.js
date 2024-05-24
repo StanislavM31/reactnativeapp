@@ -3,12 +3,12 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from './scr/screen/Home/Home';
-import Auth from './scr/screen/Auth/Auth';
-import Reg from './scr/screen/Reg/Reg';
+import {Auth} from './scr/screen/Auth/Auth';
+import {Reg} from './scr/screen/Reg/Reg';
 
 const Stack = createStackNavigator();
 
-export default function App() {
+export default function App({}) {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home'>

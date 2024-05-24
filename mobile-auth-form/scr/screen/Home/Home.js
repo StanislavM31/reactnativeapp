@@ -1,16 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import { createStackNavigator } from '@react-navigation/stack';
+import Auth from '../Auth/Auth';
 
-export function Home({navigation}) {
+const Stack = createStackNavigator();
+
+export default function Home({ navigation }) {
   return (
-    <NavigationContainer>
-      <StackRouter.Navigator initialRouteName='Home'/>
-      <Stack.Screen name='Home'component={Home}/>
-      <View style={style.container}>
-        <Button title='GET Started' onPress={()=>{navigation.navigate('Auth')}}/>
-        </View>
-    </NavigationContainer>
+    <View style={styles.container}>
+      <Button title='Get Started' onPress={() => { navigation.navigate('Auth') }} />
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'lavender',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

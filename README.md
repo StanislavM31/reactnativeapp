@@ -13,3 +13,6 @@ yarn add react-native-gesture-handler
 ??npx expo install react-native-web react-dom 
 
 ** to start npx expo
+
+mobapp - reactnative toDo
+mobile-auth-form - reactnative authForm 
