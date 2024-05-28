@@ -47,10 +47,10 @@ export default function Auth({navigation}){
 	}
     return (
         <View style = {styles.container}>
-            <TextInput style={styles.inp} onChangeText={(value)=> addValue(value,'email')} placeholder="email"/>
-            <TextInput style={styles.inp} onChangeText={(value)=> addValue(value, 'password')} placeholder="password" secureTextEntry={true}/>
+            <TextInput style={[styles.inp, { placeholderTextColor: '#64748B' }]} onChangeText={(value)=> addValue(value,'email')} placeholder="email"/>
+            <TextInput style={[styles.inp, { placeholderTextColor: '#64748B' }]} onChangeText={(value)=> addValue(value, 'password')} placeholder="password" secureTextEntry={true}/>
             <Text style={styles.no_acc}>Нет акаунта? <Text style={styles.no_acc_link} onPress={()=>navigation.navigate('Sign Up')}>Sign Up (Зарегистрироваться)</Text></Text>
-            <Button title="Login" onPress={checkInps}></Button>
+            <Button style = {styles.btn} title="Login" onPress={checkInps}></Button>
         </View>
     )
 }

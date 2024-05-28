@@ -10,8 +10,8 @@ export default function Reg({navigation}){
     })
     return (
         <View style = {styles.container}>
-            <TextInput style={styles.inp} placeholder="email"/>
-            <TextInput style={styles.inp} placeholder="password" secureTextEntry={true}/>
+            <TextInput style={[styles.inp, { placeholderTextColor: '#64748B' }]} placeholder="email"/>
+            <TextInput style={[styles.inp, { placeholderTextColor: '#64748B' }]} placeholder="password" secureTextEntry={true}/>
             <Text style={styles.toauth}>есть акаунт? <Text style ={styles.toauth_link} onPress={()=>navigation.navigate('Sign In')}>Sign In (Авторизоваться)</Text></Text>
             <Button title="Registration"></Button>
         </View>

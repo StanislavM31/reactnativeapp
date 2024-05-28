@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#8A2BE2',
+    backgroundColor: '#D6EAF8',
     alignItems: 'center',
     justifyContent: 'center',
     gap: 16
@@ -13,6 +13,7 @@ export default StyleSheet.create({
     paddingVertical: 20,
     alignSelf: 'center',
     borderRadius: 10,
+    backgroundColor: '#3498DB',
   },
   inp: {
     backgroundColor: '#FFFFFF',
@@ -21,7 +22,7 @@ export default StyleSheet.create({
     borderRadius: 8,
     marginVertical: 5,
     width: '80%',
-    border: '2px solid #E228F0'
+    border: '2px solid #F2F3F4',
   },
   toauth:{
     padding:10,
