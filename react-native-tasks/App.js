@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from './src/screen/Home/Home';
 import {Task1} from './src/screen/Task1/Task1'
 import {Task2} from './src/screen/Task2/Task2'
+import {Task3} from './src/screen/Task3/Task3'
 import {Button, Text, TextInput } from "react-native";
 
 const Stack = createStackNavigator()
@@ -15,6 +16,7 @@ export default function App() {
         <Stack.Screen name='Home' component={Home}></Stack.Screen>
         <Stack.Screen name='Task1' component={Task1}></Stack.Screen>
         <Stack.Screen name='Task2' component={Task2}></Stack.Screen>
+        <Stack.Screen name='Task3' component={Task3}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
