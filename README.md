@@ -1,5 +1,7 @@
 # reactnativeapp
 
+mobapp
+
 expo init my-new-project
 
 yarn add react-native-screens react-native-safe-area-context
@@ -14,5 +16,5 @@ yarn add react-native-gesture-handler
 
 ** to start npx expo
 
-mobapp - reactnative toDo
+mobapp(mobapp) - reactnative toDo
 mobile-auth-form - reactnative authForm 
